@@ -31,7 +31,7 @@ namespace parsingJSON
         private static void Main(string[] args)
         {
             //get some JSON data
-            JObject jData = JObject.Parse(httpResponse(@"https://www.googleapis.com/customsearch/v1?q=morgan+lewis&cx=017767199019333658645%3Ahey-u5glvao&key=AIzaSyDavzc5lneutuoFy-K0Ycs7tFRu_8Hbj74").Result);
+            JObject jData = JObject.Parse(httpResponse(@"YourJSONLink").Result);
 
             string sampleValue = (string)jData["url"]["type"];
 
